@@ -1,0 +1,35 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block navbar %}
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"> Anime Watchlist </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% for anime in season_anime %}
+        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
+            <img src="{{ anime.image_url }}" alt="{{ anime.title }} poster" class="img-responsive">
+            <li class="text-center">
+                <a href="/movie/{{anime.mal_id}}">
+                    {{ anime.title|truncate(20)}}</a>
+                <p> Episodes : {{ anime.episodes }}</p>
+                <p> date started airing: {{ anime.airing_start | truncate(13) }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
