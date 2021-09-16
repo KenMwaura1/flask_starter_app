@@ -23,13 +23,18 @@
 
 {% block content %}
     {% for anime in season_anime %}
-        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
-            <img src="{{ anime.image_url }}" alt="{{ anime.title }} poster" class="img-responsive">
-            <li class="text-center">
-                <a href="/movie/{{anime.mal_id}}">
-                    {{ anime.title|truncate(20)}}</a>
-                <p> Episodes : {{ anime.episodes }}</p>
-                <p> date started airing: {{ anime.airing_start | truncate(13) }}</p>
+        <div class="card-group col-xs-12 col-sm-4 col-md-2 col-lg-2 anime-card ">
+            <div class="card border-primary" style=" padding-bottom: 25px">
+                <img src="{{ anime.image_url }}" alt="{{ anime.title }} poster" class="img-responsive card-img-"
+                     style="max-height: 30rem">
+                <li class="text-left ">
+                    <a href="/anime/{{anime.mal_id}}">
+                        {{ anime.title|truncate(30)}}</a>
+                    <p> Episodes : {{ anime.episodes }}</p>
+                    <p> date started airing: {{ anime.airing_start | truncate(13) }}</p>
+                </li>
+            </div>
+
         </div>
     {% endfor %}
 {% endblock %}

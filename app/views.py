@@ -11,5 +11,5 @@ def index():
     :return: index template
     """
     season_anime = get_season_anime()
-    print(season_anime)
+    # print(season_anime)
     return render_template('index.html', season_anime=season_anime)
