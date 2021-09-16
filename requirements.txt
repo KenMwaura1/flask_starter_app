@@ -9,7 +9,6 @@ dominate==2.6.0
 Flask==2.0.1
 Flask-Bootstrap==3.3.7.1
 idna==3.2
-initialize==1.1.1
 itsdangerous==2.0.1
 jikanpy==4.3.2
 Jinja2==3.0.1

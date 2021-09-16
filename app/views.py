@@ -4,7 +4,7 @@ from .anime_request import get_season_anime
 from . import app
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     """
     root page view that returns the index page and its data

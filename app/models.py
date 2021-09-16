@@ -1,7 +1,5 @@
 from dataclasses import dataclass
 
-import initialize as initialize
-
 
 @dataclass
 class Anime:

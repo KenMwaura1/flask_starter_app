@@ -12,8 +12,6 @@ ENV FLASK_APP=run.py
 
 ENV FLASK_ENV=development
 
-ENV FLASK_RUN_HOST=0.0.0.0
-
 EXPOSE 5001:5000
 
 RUN pip install -r requirements.txt

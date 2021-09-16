@@ -23,9 +23,9 @@
 
 {% block content %}
     {% for anime in season_anime %}
-        <div class="card-group col-xs-12 col-sm-4 col-md-2 col-lg-2 anime-card ">
-            <div class="card border-primary" style=" padding-bottom: 25px">
-                <img src="{{ anime.image_url }}" alt="{{ anime.title }} poster" class="img-responsive card-img-"
+        <div class="card-group col-xs-12 col-sm-4 col-md-2 col-lg-2">
+            <div class="card">
+                <img src="{{ anime.image_url }}" alt="{{ anime.title }} poster" class="img-responsive"
                      style="max-height: 30rem">
                 <li class="text-left ">
                     <a href="/anime/{{anime.mal_id}}">
