@@ -1,5 +1,9 @@
 # flask_starter_app
-simple flask starter app utilizing docker to showcase seasonal anime using jikanpy (myanimelist unofficial api).
+Simple flask starter app utilizing docker to showcase seasonal anime using [jikanpy](https://github.com/abhinavk99/jikanpy) 
+(myanimelist unofficial api).
+
+## Article 
+Link to write-up [here](https://dev.to/ken_mwaura1/getting-started-with-flask-and-docker-3ie8)
 
 ## Docker Quickstart
 **Using Docker is recommended, as it guarantees the application is run using compatible versions of Python and Node**.
